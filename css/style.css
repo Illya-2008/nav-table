@@ -36,7 +36,7 @@ nav a{
     margin-bottom: 40px;
 }
 
-.menu1 ul{
+.ul1{
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -45,7 +45,8 @@ nav a{
     background-color: #2a3644;
 }
 
-.menu1 li{
+.ul1 li{
+    position: relative;
     border-right: 1px solid #3f4852;
     border-left: 1px solid #3f4852;
 }
@@ -62,6 +63,37 @@ nav a{
 .menu1 a:hover{
     color: #fd8612;
     background-color: #3f4852;
+}
+
+.menu1 li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu{
+    display: none;
+    width: 210px;
+    position: absolute;
+    padding: 0;
+    border-radius: 3px;
+    list-style: none;
+    background-color: #d2d4d5;
+    z-index: 1;
+}
+
+.sub-menu li{
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+    transition: all 1s ease;
+}
+
+.sub-menu li:hover{
+    cursor: pointer;
+    color: #fd8612;
+    background-color: #2a3644;
+
 }
 
 .menu2{
@@ -95,6 +127,10 @@ nav a{
 .menu2 a:hover{
     color: #fd8612;
     background-color: #3f4852;
+}
+
+.menu2 li:last-child{
+    border: none;
 }
 
 .menu3{
@@ -170,6 +206,7 @@ td{
 }
 
 .results{
+    width: 100px;
     text-align: right;
 }
 
@@ -222,5 +259,16 @@ td:last-child{
 i{
     border-top: 1px solid #c0c1c2;
     border-right: 1px solid #c0c1c2;
+}
+
+.GPU,
+.SSD,
+.CPU{
+    width: 90px;
+    text-align: center;
+}
+
+.№{
+    width: 20px;
 }
 
