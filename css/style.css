@@ -46,9 +46,12 @@ nav a{
 }
 
 .ul1 li{
-    position: relative;
     border-right: 1px solid #3f4852;
     border-left: 1px solid #3f4852;
+}
+
+.ul1 a{
+    position: relative;
 }
 
 .menu1 a{
@@ -70,6 +73,7 @@ nav a{
 }
 
 .sub-menu{
+    margin-top: 5px;
     display: none;
     width: 210px;
     position: absolute;
@@ -81,18 +85,28 @@ nav a{
 }
 
 .sub-menu li{
-    padding: 15px 20px 15px 20px;
     font-size: 15px;
     color: #2a3644;
     font-weight: bold;
     font-family: "Arial";
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+    border: none;
 }
 
-.sub-menu li:hover{
+.sub-menu a{
+    width: 150px;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+    transition: all 0.5s ease;
+}
+
+.sub-menu a:hover{
     cursor: pointer;
     color: #fd8612;
     background-color: #2a3644;
+    border-radius: 3px;
 
 }
 
