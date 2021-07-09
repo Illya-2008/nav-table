@@ -110,6 +110,24 @@ nav a{
 
 }
 
+.sub2{
+    top: 100px;
+    left: 220px;
+}
+
+.sub2 li{
+    border: none;
+}
+
+.sub3{
+    top: 125px;
+    right: 220px;
+}
+
+.last-sub{
+    right: 470px;
+}
+
 .menu2{
     border-radius: 4px;
     font-weight: bold;
@@ -117,16 +135,24 @@ nav a{
     background-color: #2a3644;
 }
 
-.menu2 ul{
+.ul2{
     display: flex;
+    list-style: none;
     margin-bottom: 40px;
     padding-left: 0;
     padding-right: 0;
-    list-style: none;
 }
 
 .menu2 li{
     border-right: 1px solid #3f4852;
+}
+
+.ul2 a{
+    position: relative;
+}
+
+.menu2 li:hover .sub-menu{
+    display: block;
 }
 
 .menu2 a{
@@ -141,6 +167,7 @@ nav a{
 .menu2 a:hover{
     color: #fd8612;
     background-color: #3f4852;
+    border-radius: 3px;
 }
 
 .menu2 li:last-child{
@@ -154,7 +181,7 @@ nav a{
     background-color: #2a3644;
 }
 
-.menu3 ul{
+.ul3{
     display: flex;
     margin-bottom: 40px;
     list-style: none;
@@ -233,6 +260,8 @@ td{
 }
 
 .second{
+    overflow: hidden;
+    border-radius: 3px;
     display: table;
     width: 100%;
     color: white;
