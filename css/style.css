@@ -90,7 +90,6 @@ nav a{
     font-weight: bold;
     font-family: "Arial";
     transition: all 0.5s ease;
-    border: none;
 }
 
 .sub-menu a{
@@ -147,17 +146,23 @@ nav a{
     border-right: 1px solid #3f4852;
 }
 
+.sub1 li,
+.sub2 li,
+.sub3 li{
+    border: none;
+    padding: 10px;
+}
+
 .ul2 a{
     position: relative;
+    padding: 10px;
 }
 
 .menu2 li:hover .sub-menu{
     display: block;
 }
 
-.menu2 a{
-    font-size: 16px;
-    color: #ffffff;
+.menu2 .a{
     font-weight: bold;
     font-family: "Arial";
     padding: 13px 40px 12px 46.5px;
