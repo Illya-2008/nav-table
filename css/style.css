@@ -190,9 +190,11 @@ nav a{
     display: flex;
     margin-bottom: 40px;
     list-style: none;
+    padding: 0;
 }
 
 .menu3 li{
+    position: relative;
     border-right: 1px solid #3f4852;
 }
 
@@ -205,7 +207,76 @@ nav a{
     display: inline-block;
 }
 
-.menu3 a:hover{
+.first-a:first-child{
+    padding: 13px 30px 12px 60px;
+}
+
+.first-a:hover{
+    border-radius: 3px;
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+.first-a:before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    width: 15px;
+    height: 13px;
+    background-image: url(../img/home.webp);
+}
+
+.social {
+    padding: 10px 0 10px 160px;
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.social li{
+    border: none;
+    margin: 0 10px;
+}
+
+.social a {
+    padding: 0;
+    display: block;
+    background-image: url(../img/sprite.png);
+    transition: all 0.7s ease;
+}
+
+a.fb {
+    width: 10px;
+    height: 20px;
+    background-position: 0 0;
+}
+
+a.fb:hover {
+    background-position: 0 -22px;
+}
+
+a.tw {
+    width: 15px;
+    height: 19px;
+    background-position: -12px 0;
+}
+
+a.tw:hover {
+    background-position: -12px -19px;
+}
+
+a.in {
+    width: 15px;
+    height: 18px;
+    background-position: -30px 0;
+}
+
+a.in:hover {
+    background-position: -30px -20px;
+}
+
+.menu3 .a3:hover{
     color: #fd8612;
     background-color: #3f4852;
 }
