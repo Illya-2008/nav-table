@@ -332,7 +332,6 @@ td{
 .second p:hover,
 .first tbody tr:hover{
     cursor: pointer;
-    background-color: #c0c1c2;
 }
 
 .second{
@@ -375,6 +374,16 @@ td:last-child{
 .second p:nth-child(odd),
 .first tbody tr:nth-child(even) {
     background-color: #e8e8e8;
+}
+
+.second p:nth-child(even):hover,
+.first tbody tr:nth-child(odd):hover {
+    background-color: #c0c1c2;
+}
+
+.second p:nth-child(odd):hover,
+.first tbody tr:nth-child(even):hover {
+    background-color: #c0c1c2;
 }
 
 i{
